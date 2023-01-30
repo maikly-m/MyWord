@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data >
+
+    </data >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            tools:text="text"
+            android:textSize="16sp"
+            android:id="@+id/tv_word_name"
+            android:textColor="@color/black"
+            android:gravity="center|start"
+            android:paddingStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <TextView
+            tools:text="text"
+            android:textSize="14sp"
+            android:id="@+id/tv_sound_mark"
+            android:textColor="@color/black_aa"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_word_name"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+        <TextView
+            tools:text="词根:sur-表示“上”。"
+            android:textSize="14sp"
+            android:id="@+id/tv_root_variant"
+            android:textColor="@color/black_aa"
+            android:gravity="center|start"
+            android:paddingStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_word_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            tools:text="拆分:sur上+plus加"
+            android:textSize="14sp"
+            android:id="@+id/tv_structure"
+            android:textColor="@color/black_aa"
+            android:gravity="center|start"
+            android:paddingStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_root_variant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            tools:text="解释"
+            android:textSize="14sp"
+            android:id="@+id/tv_explain"
+            android:textColor="@color/black_aa"
+            android:gravity="center|start"
+            android:paddingStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_structure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            tools:text="n.过剩"
+            android:textSize="14sp"
+            android:id="@+id/tv_translation"
+            android:textColor="@color/black_aa"
+            android:gravity="center|start"
+            android:paddingStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            tools:text="adj. 过剩的；多余的\nn. 剩余额；公积金；顺差；盈余'"
+            android:textSize="14sp"
+            android:id="@+id/tv_meaning"
+            android:textColor="@color/black_aa"
+            android:gravity="center|start"
+            android:paddingStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_translation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout >
+</layout >
