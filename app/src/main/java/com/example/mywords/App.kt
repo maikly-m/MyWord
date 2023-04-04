@@ -3,7 +3,9 @@ package com.example.mywords
 import android.app.Application
 import android.util.Log
 import com.example.mywords.sql.AppDatabase
+import com.example.nativelib.NativeLib
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class App : Application() {
